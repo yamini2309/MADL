@@ -24,13 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnValidate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                if(etUname.getText().toString().matches("[a-zA-Z]+") && etPwd.getText().toString().matches("[0-9]+") && etPwd.getText().toString().length() == 4) {
-//                    Toast t = Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT);
-//                    t.show();
-//                } else {
-//                    Toast t = Toast.makeText(getApplicationContext(), "Please re-check your username or password.", Toast.LENGTH_SHORT);
-//                    t.show();
-//                }
+
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
                 alertDialogBuilder.setMessage("Are you sure,You wanted to open another activity");
                 alertDialogBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
@@ -44,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                             Toast t = Toast.makeText(getApplicationContext(), "Please re-check your username or password.", Toast.LENGTH_SHORT);
                             t.show();
                         }
-                } });
+                    } });
                 alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
